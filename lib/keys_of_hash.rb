@@ -1,8 +1,8 @@
 class Hash
   def keys_of(*arguments)
     keyarray = []
-    self.each_key do |key|
-      keyarray << key if key == arguments 
+    self.each do |key, value|
+      keyarray << key if value == arguments 
     end
     return keyarray
   end
