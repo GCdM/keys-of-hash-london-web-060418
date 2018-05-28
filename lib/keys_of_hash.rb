@@ -1,6 +1,8 @@
 class Hash
   def keys_of(*arguments)
     keyarray = []
-    if 
+    if Hash.include?(arguments)
+      keyarray << 
+    end
   end
 end
